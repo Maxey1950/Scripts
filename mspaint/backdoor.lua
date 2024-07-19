@@ -10,11 +10,11 @@ local maingame = mainui.Initiator.Main_Game
 local camera = workspace.CurrentCamera
 local remote_folder = ReplicatedStorage.RemotesFolder
 
-local repo = 'https://raw.githubusercontent.com/mstudio45/LinoriaLib/main/'
+local repo = 'https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/Library.lua'
 
-local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
-local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
-local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/addons/SaveManager.lua"))()
 
 local Window = Library:CreateWindow({
     Title = "mspaint > Doors (the backdoor) | "..player.DisplayName,
